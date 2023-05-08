@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <body>
+      <header id="header">
+        <a href="#" class="logo">GO GREEN</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <section>
+        <h2 id="text"><span>It's time for a new</span><br />WELCOME</h2>
+
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png"
+          id="bird1"
+        />
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png"
+          id="bird2"
+        />
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png"
+          id="forest"
+        />
+
+        <a href="#" id="btn">Explore</a>
+
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png"
+          id="rocks"
+        />
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png"
+          id="water"
+        />
+      </section>
+
+      <div class="sec">
+        <h2>FOREST</h2>
+        <p>
+          Forests are one of the most important ecosystems on our planet.
+          Covering approximately 30% of the Earth's land area, they provide
+          critical benefits to both humans and wildlife. From the air we breathe
+          to the products we use in our everyday lives, forests play a vital
+          role in sustaining our planet's health and well-being.
+        </p>
+        <p>
+          One of the most important functions of forests is their ability to
+          produce oxygen through the process of photosynthesis. Trees and other
+          plants absorb carbon dioxide and release oxygen, which is essential
+          for human and animal respiration. In fact, forests are responsible for
+          producing about 40% of the oxygen we breathe.
+        </p>
+        <p>
+          Forests also play a crucial role in regulating the Earth's climate.
+          Trees and other plants absorb carbon dioxide from the atmosphere and
+          store it in their leaves, branches, and trunks. This process helps to
+          reduce the amount of carbon dioxide in the atmosphere, which in turn
+          helps to slow down the pace of climate change.
+        </p>
+        <p>
+          In addition to their ecological benefits, forests also provide
+          important economic and social benefits. Many communities around the
+          world rely on forests for their livelihoods, as they provide timber,
+          fuelwood, and other forest products. Forests also support a wide range
+          of wildlife, including many endangered species, and provide important
+          recreational opportunities for people to enjoy.
+        </p>
+        <p>
+          However, forests around the world are under threat from deforestation,
+          climate change, and other human activities. It is crucial that we take
+          action to protect and conserve these vital ecosystems for future
+          generations. By working together to promote sustainable forest
+          management practices and reduce our impact on the environment, we can
+          help to ensure that forests continue to provide the many benefits that
+          we all rely on.
+        </p>
+      </div>
+
+      <footer>
+        <a href="http://www.freepik.com">FREDOANANDA</a>
+      </footer>
+
+      <script>
+        let text = document.getElementById("text");
+        let bird1 = document.getElementById("bird1");
+        let bird2 = document.getElementById("bird2");
+        let btn = document.getElementById("btn");
+        let rocks = document.getElementById("rocks");
+        let forest = document.getElementById("forest");
+        let water = document.getElementById("water");
+        let header = document.getElementById("header");
+
+        window.addEventListener("scroll", function () {
+          let value = window.scrollY;
+
+          text.style.top = 50 + value * -0.1 + "%";
+          bird2.style.top = value * -1.5 + "px";
+          bird2.style.left = value * 2 + "px";
+          bird1.style.top = value * -1.5 + "px";
+          bird1.style.left = value * -5 + "px";
+          btn.style.marginTop = value * 1.5 + "px";
+          rocks.style.top = value * -0.12 + "px";
+          forest.style.top = value * 0.25 + "px";
+          header.style.top = value * 0.5 + "px";
+        });
+      </script>
+    </body>
+  </body>
+</html>
